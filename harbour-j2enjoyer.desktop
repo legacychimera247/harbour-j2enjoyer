@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-j2enjoyer
+Exec=sailfish-qml harbour-j2enjoyer
+Name=Enjoyer!
+
+Name[ru]=Наслаждающийся!
+
+[X-Sailjail]
+OrganizationName=io.github.roundedrectangle
+ApplicationName=j2enjoyer
+Permissions=Internet
