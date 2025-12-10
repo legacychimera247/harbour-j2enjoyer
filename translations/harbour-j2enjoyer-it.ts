@@ -6,7 +6,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>A helper application for all the J2 Enjoyers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un&apos;applicazione d&apos;aiuto a tutti quelli che amano il J2.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="64"/>
@@ -40,9 +40,9 @@
         <location filename="../qml/cover/CoverPage.qml" line="58"/>
         <source>sold out of %n</source>
         <comment>after a number of units, e.g. 1500 [in big] &lt;new line&gt; sold out of 2000</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>venduto di %n</numerusform>
+            <numerusform>venduti di %n</numerusform>
         </translation>
     </message>
 </context>
@@ -66,41 +66,41 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="49"/>
         <source>J2: Enjoyer!</source>
-        <translation type="unfinished"></translation>
+        <translation>J2: Enjoyer!</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/FirstPage.qml" line="66"/>
         <source>sold out of %n</source>
         <comment>after a number of units, e.g. 1500 [in big] &lt;new line&gt; sold out of 2000</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>venduto di %n</numerusform>
+            <numerusform>venduti di %n</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/FirstPage.qml" line="74"/>
         <source>%Ln% funded</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%Ln% finanziato</numerusform>
+            <numerusform>%Ln% finanziati</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/FirstPage.qml" line="84"/>
         <source>The product will only be produced if %n units are supported by %1</source>
         <comment>%1 is date</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>L&apos;oggetto sarà prodotto solo se %n unità verrà venduta al %1</numerusform>
+            <numerusform>L&apos;oggetto sarà prodotto solo se %n unità verranno vendute al %1</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/FirstPage.qml" line="108"/>
         <source>will end</source>
         <comment>after the duration before the deadline, e.g. IN 3 MONTHS &lt;new line&gt; will end</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>finisce</numerusform>
+            <numerusform>finiscono</numerusform>
         </translation>
     </message>
 </context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="22"/>
         <source>URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="39"/>
