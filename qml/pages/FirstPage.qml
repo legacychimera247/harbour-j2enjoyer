@@ -17,8 +17,6 @@ Page {
         id: listView
         anchors.fill: parent
         contentHeight: column.height
-        opacity: loading ? 0 : 1
-        Behavior on opacity { FadeAnimator {} }
 
         PullDownMenu {
             busy: appWindow.refreshing && !appWindow.loading
@@ -44,6 +42,8 @@ Page {
             id: column
             width: parent.width
             spacing: Theme.paddingMedium
+            opacity: loading ? 0 : 1
+            Behavior on opacity { FadeAnimator {} }
 
             PageHeader {
                 title: qsTr("J2: Enjoyer!")
