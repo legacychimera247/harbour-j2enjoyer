@@ -45,20 +45,21 @@ WorkerScript.onMessage = function(message) {
                 try {
                     var dom = new Dom(request.response)
                     //send('productTitle', request.respose)
+                    var product = dom.getElementsByClassName('product')[0]
 
-                    var number = dom.getElementsByClassName('cf-backertotal')[0]
+                    var number = product.getElementsByClassName('cf-backertotal')[0]
                     send('number', n(number.textContent()))
                     send('total', n(number.parentNode.childNodes
                                     .map(function(x) { return x.nodeType === NodeType.text ? x.text : '' })
                                     .join('')
                                     .replace(/\x20+/g, ' ')
                                     ))
-                    send('percentage', n(dom.getElementsByClassName('cf-percent-text')[0].textContent()))
-                    send('endTime', n(dom.getElementsByClassName('cf-time-left')[0].getAttribute('data-end-time')))
-                    send('productTitle', dom.getElementsByTagName('h1')[0].textContent())
+                    send('percentage', n(product.getElementsByClassName('cf-percent-text')[0].textContent()))
+                    send('endTime', n(product.getElementsByClassName('cf-time-left')[0].getAttribute('data-end-time')))
+                    send('productTitle', product.getElementsByTagName('h1')[0].textContent())
 
                     var images = []
-                    dom.getElementsByClassName('image-magnify-lightbox').forEach(function(node) {
+                    product.getElementsByClassName('image-magnify-lightbox').forEach(function(node) {
                         images.push(parseUrl(node.getAttribute('src')))
                     })
                     send('images', images)
