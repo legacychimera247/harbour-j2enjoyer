@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
 import Nemo.Configuration 1.0
+import Nemo.Notifications 1.0
 
 ApplicationWindow {
     id: appWindow
@@ -17,6 +18,15 @@ ApplicationWindow {
     property int endTime
     property var images: []
     property string productTitle
+
+    Notification {
+        id: notifier
+        replacesId: 0
+        onReplacesIdChanged: if (replacesId !== 0) replacesId = 0
+        isTransient: !config.infoInNotifications
+        appIcon: 'image://theme/icon-lock-warning'
+        summary: qsTr("Enjoying failure!")
+    }
 
     WorkerScript {
         id: worker
@@ -46,6 +56,16 @@ ApplicationWindow {
                 break
             case 'loaded':
                 loading = refreshing = false
+                break
+            case 'error':
+                console.log("Error", v)
+                notifier.body = JSON.stringify(v)
+                notifier.publish()
+                break
+            case 'error2':
+                console.log("Error2", v)
+                notifier.body = qsTr("Error %1").arg(v)
+                notifier.publish()
                 break
             }
         }
@@ -82,5 +102,7 @@ ApplicationWindow {
         property real updateInterval: 30 // while real value can't be customized in the app, it can be by editing dconf value manually
         property bool backgroundAutoUpdate: true
         property real backgroundUpdateInterval: 1800 // 30 minutes
+
+        property bool infoInNotifications: false
     }
 }

@@ -41,28 +41,33 @@ WorkerScript.onMessage = function(message) {
     request.onreadystatechange = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status >= 200 && request.status <= 300) {
-                var dom = new Dom(request.response)
-                //send('productTitle', request.respose)
+                try {
+                    var dom = new Dom(request.response)
+                    //send('productTitle', request.respose)
 
-                var number = dom.getElementsByClassName('cf-backertotal')[0]
-                send('number', n(number.textContent()))
-                send('total', n(number.parentNode.childNodes
-                                .map(function(x) { return x.nodeType === NodeType.text ? x.text : '' })
-                                .join('')
-                                .replace(/\x20+/g, ' ')
-                                ))
-                send('percentage', n(dom.getElementsByClassName('cf-percent-text')[0].textContent()))
-                send('endTime', n(dom.getElementsByClassName('cf-time-left')[0].getAttribute('data-end-time')))
-                send('productTitle', dom.getElementsByTagName('h1')[0].textContent())
+                    var number = dom.getElementsByClassName('cf-backertotal')[0]
+                    send('number', n(number.textContent()))
+                    send('total', n(number.parentNode.childNodes
+                                    .map(function(x) { return x.nodeType === NodeType.text ? x.text : '' })
+                                    .join('')
+                                    .replace(/\x20+/g, ' ')
+                                    ))
+                    send('percentage', n(dom.getElementsByClassName('cf-percent-text')[0].textContent()))
+                    send('endTime', n(dom.getElementsByClassName('cf-time-left')[0].getAttribute('data-end-time')))
+                    send('productTitle', dom.getElementsByTagName('h1')[0].textContent())
 
-                var images = []
-                dom.getElementsByClassName('image-magnify-lightbox').forEach(function(node) {
-                    images.push(parseUrl(node.getAttribute('src')))
-                })
-                send('images', images)
+                    var images = []
+                    dom.getElementsByClassName('image-magnify-lightbox').forEach(function(node) {
+                        images.push(parseUrl(node.getAttribute('src')))
+                    })
+                    send('images', images)
 
-                send('loaded')
-            }
+                    send('loaded')
+                } catch (e) {
+                    send('error', e)
+                }
+            } else
+                send('error2', request.status)
         }
     }
 

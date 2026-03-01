@@ -114,6 +114,13 @@ Page {
                     Behavior on opacity { FadeAnimator {} }
                 }
             }
+
+
+            TextSwitch {
+                text: qsTr("Show info messages in notifications")
+                checked: config.infoInNotifications
+                onCheckedChanged: config.infoInNotifications = checked
+            }
         }
     }
 }
