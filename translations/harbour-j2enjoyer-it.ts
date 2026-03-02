@@ -139,58 +139,57 @@
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="32"/>
-        <source>URL</source>
-        <translation>URL</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="49"/>
-        <location filename="../qml/pages/SettingsPage.qml" line="55"/>
-        <source>Page path</source>
-        <translation>Percorso pagina</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="60"/>
-        <source>Jolla Phone</source>
+        <source>Enjoyables server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="65"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="54"/>
+        <source>Path to the Enjoyable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingsPage.qml" line="59"/>
+        <source>Jolla Phone Pre-order</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingsPage.qml" line="64"/>
         <source>Jolla Phone (Sep 2026)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="75"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="74"/>
         <source>Auto-update</source>
         <translation>Auto ricarica</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="88"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="87"/>
         <source>Auto-update interval, in seconds: %1</source>
         <translation>Intervallo auto ricarica di secondi: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="89"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="88"/>
         <source>Auto-update interval, in seconds</source>
         <translation>Intervallo auto ricarica, in secondi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="110"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="109"/>
         <source>Auto-update in background</source>
         <translation>Auto ricarica in background</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="123"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="122"/>
         <source>Background auto-update interval, in seconds: %1</source>
         <translation>Intervallo auto ricarica in background di secondi: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="124"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="123"/>
         <source>Background auto-update interval, in seconds</source>
         <translation>Intervallo auto ricarica in background di secondi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="146"/>
-        <source>Show info messages in notifications</source>
+        <location filename="../qml/pages/SettingsPage.qml" line="145"/>
+        <source>Enjoy failures in Events</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

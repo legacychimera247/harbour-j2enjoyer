@@ -112,14 +112,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>URL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Page path</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Auto-update</source>
         <translation type="unfinished"></translation>
     </message>
@@ -144,15 +136,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Jolla Phone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Jolla Phone (Sep 2026)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show info messages in notifications</source>
+        <source>Enjoyables server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to the Enjoyable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enjoy failures in Events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Jolla Phone Pre-order</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

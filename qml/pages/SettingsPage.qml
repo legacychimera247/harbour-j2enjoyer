@@ -29,7 +29,7 @@ Page {
 
             TextField {
                 id: hostField
-                label: qsTr("URL")
+                label: qsTr("Enjoyables server")
                 text: config.host
                 onFocusChanged: if (!focus) config.host = text
 
@@ -46,18 +46,17 @@ Page {
 
             TextField {
                 id: pathField
-                label: qsTr("Page path")
                 text: config.pagePath
                 onFocusChanged: if (!focus) config.pagePath = text
 
                 labelComponent: Component {
                     MiniComboBox {
-                        label: qsTr("Page path")
+                        label: qsTr("Path to the Enjoyable")
                         onCurrentItemChanged:
                             if (currentItem !== null) currentItem = null
                         menu: ContextMenu {
                             MenuItem {
-                                text: qsTr("Jolla Phone")
+                                text: qsTr("Jolla Phone Pre-order")
                                 onClicked:
                                     pathField.text = config.pagePath = "/products/jolla-phone-preorder"
                             }
@@ -143,7 +142,7 @@ Page {
 
 
             TextSwitch {
-                text: qsTr("Show info messages in notifications")
+                text: qsTr("Enjoy failures in Events")
                 checked: config.infoInNotifications
                 onCheckedChanged: config.infoInNotifications = checked
             }

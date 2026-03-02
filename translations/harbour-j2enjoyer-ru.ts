@@ -145,59 +145,58 @@
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="32"/>
-        <source>URL</source>
-        <translation type="unfinished"></translation>
+        <source>Enjoyables server</source>
+        <translation>Сервер наслаждений</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="49"/>
-        <location filename="../qml/pages/SettingsPage.qml" line="55"/>
-        <source>Page path</source>
-        <translation>Путь к странице</translation>
+        <location filename="../qml/pages/SettingsPage.qml" line="54"/>
+        <source>Path to the Enjoyable</source>
+        <translation>Путь к наслаждению</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="60"/>
-        <source>Jolla Phone</source>
-        <translation type="unfinished"></translation>
+        <location filename="../qml/pages/SettingsPage.qml" line="59"/>
+        <source>Jolla Phone Pre-order</source>
+        <translation>Предзаказ Jolla Phone</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="65"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="64"/>
         <source>Jolla Phone (Sep 2026)</source>
         <translation>Jolla Phone (Сентябрь 2026)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="75"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="74"/>
         <source>Auto-update</source>
         <translation>Автообновление</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="88"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="87"/>
         <source>Auto-update interval, in seconds: %1</source>
         <translation>Интервал автообновления, в секундах: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="89"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="88"/>
         <source>Auto-update interval, in seconds</source>
         <translation>Интервал автообновления, в секундах</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="110"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="109"/>
         <source>Auto-update in background</source>
         <translation>Автообновлять в фоне</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="123"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="122"/>
         <source>Background auto-update interval, in seconds: %1</source>
         <translation>Интервал фонового автообновления, в секундах: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="124"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="123"/>
         <source>Background auto-update interval, in seconds</source>
         <translation>Интервал фонового автообновления, в секундах</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="146"/>
-        <source>Show info messages in notifications</source>
-        <translation>Показывать информационные сообщения в списке уведомлений</translation>
+        <location filename="../qml/pages/SettingsPage.qml" line="145"/>
+        <source>Enjoy failures in Events</source>
+        <translation>Провалы в наслаждениях в Событиях</translation>
     </message>
 </context>
 <context>
